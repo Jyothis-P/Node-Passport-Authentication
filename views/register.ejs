@@ -1,0 +1,40 @@
+<%- include ('partials/header') %>
+
+<div class="col">
+    <h1 style="text-align: center">Sign Up</h1>
+    <div class="rwd-form">
+      <form action="/register" method="post">
+        <div class="form-group">
+          <label for="username">User Name</label>
+          <input class="form-control" type="text" name="username" autocomplete="off" required />
+        </div>
+        <div class="form-group">
+          <label for="username">Email</label>
+          <input class="form-control" type="email" name="email" autocomplete="off" required />
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input class="form-control" id="password" type="password" name="password" autocomplete="off" required />
+          <span toggle="#password" class="float-right fa fa-fw fa-eye field-icon toggle-password"></span>
+        </div>
+        <div class="form-group">
+          <label for="c-password">Confirm Password</label>
+          <input class="form-control" id="c-password" type="password" name="c-password" autocomplete="off" required />
+          <span toggle="#c-password" class="float-right fa fa-fw fa-eye field-icon toggle-password"></span>
+        </div>
+        <!-- <div class="form-group">
+          <label for="school">School</label>
+          <input class="form-control" type="text" name="school" autocomplete="off" required />
+        </div> -->
+        <div class="form-group">
+          <button type="submit" class="btn btn-md btn-primary btn-block">Sign Up!</button>
+        </div>
+        <hr>
+        <a href=".">Back</a>
+      </form>
+    </div>
+  </div>
+
+
+
+  <%- include ('partials/footer') %>

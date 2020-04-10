@@ -1,0 +1,30 @@
+<%- include ('partials/header') %>
+
+<div class="col m-3">
+  <h1 style="text-align: center">Login</h1>
+  <div class="rwd-form">
+    <form action="/login" method="post">
+      <div class="form-group">
+        <label for="username">User Name</label>
+        <input class="form-control" type="text" name="username" autocomplete="off" required />
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input class="form-control" id="password" type="password" name="password" autocomplete="off" required />
+        <span toggle="#password" class="float-right fa fa-fw fa-eye field-icon toggle-password"></span>
+      </div>
+      <div class="form-group">
+        <button class="btn btn-md btn-primary btn-block">Login</button>
+      </div>
+      <span>Don't have an account? <a href="/register">Sign Up</a></span>
+
+      <br><br>
+      <span>Forgot your password? </span>
+      <a href="/forgot">Reset Password</a>
+    </form>
+    <hr>
+    <a href="/">Back</a>
+  </div>
+</div>
+
+<%- include ('partials/footer') %>

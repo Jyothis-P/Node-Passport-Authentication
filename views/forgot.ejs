@@ -1,0 +1,37 @@
+<%- include("partials/header") %> 
+
+	  <!-- Header starts here -->
+	<div class="space-100"></div>
+    <div class="container">
+        <nav aria-label="breadcrumb">
+			<ol class="breadcrumb">
+				<li class="breadcrumb-item"><a href="/login">Login</a></li>
+				<li class="breadcrumb-item active" aria-current="page">Forgot password</li>
+			</ol>
+		</nav>
+	</div>
+
+    <div class="container">
+
+		<form action="/forgot" method="POST">
+
+			<div class="form-group">
+				<label for="email">Email id</label>
+				<input name="email" type="email" id="pass" class="form-control" required>
+            </div>
+            
+			<button id="register" class="btn btn-dark">
+				Forgot password
+            </button>
+            <br><br>
+
+        </form>
+        
+        <div class="alert alert-info">
+			A password reset mail will be sent to your registered email address. If you still face any problems. Contact Us
+        </div>
+	
+	</div><!-- container ends  -->
+	
+
+	<%- include("partials/footer") %>

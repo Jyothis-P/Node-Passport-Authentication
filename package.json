@@ -24,7 +24,7 @@
   },
   "homepage": "https://github.com/Jyothis-P/Node-Passport-Authentication#readme",
   "dependencies": {
-    "async": "^3.2.0",
+    "async": "^3.2.2",
     "bcrypt": "^4.0.1",
     "body-parser": "^1.19.0",
     "connect-flash": "^0.1.1",
